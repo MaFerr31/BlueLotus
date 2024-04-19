@@ -1,0 +1,236 @@
+:root {
+    --purple: #603AB1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+
+.menu_barra ul {
+    display: flex;
+    gap: 7.0rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu_lista li a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.menu_lista a:hover {
+    color: var(--purple);
+
+}
+
+.icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+.icons svg:hover {
+    color: var(--purple);
+}
+
+
+/* Slider - Carrossel de imagens*/
+
+.slider {
+    margin: 0 auto;
+    width: 1440px;
+    height: 915px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 915px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide img {
+    position: relative;
+    width: 1440px;
+}
+
+.slogan_h1 {
+    display: inline-block;
+    position: absolute;
+    width: 962px;
+    height: 107px;
+    left: 238px;
+    top: 451px;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: initial;
+    color: #FFFFFF;
+
+}
+
+.slogan_h2 {
+    display: inline-block;
+    position: absolute;
+    width: 198px;
+    height: 33px;
+    left: 638px;
+    top: 383px;
+    text-decoration-line: underline;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.home-button {
+    position: absolute;
+    width: 177.42px;
+    height: 36px;
+    left: 629px;
+    top: 678px;
+    background: #4380DF;
+    border-radius: 88px;
+    font-family: 'Rosario';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.home-button:hover{
+    color: #4380DF;
+    background-color: #FFFFFF;
+}
+
+.home-button a{
+    color: #FFF;
+}
+
+.home-button a:hover{
+    color: #4380DF;
+}
+
+.imagens_home {
+    filter: brightness(35%);
+    filter: drop-shadow(0%)
+}
+
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.navegacao-manual {
+    position: absolute;
+    width: 1440px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn {
+    border: 2px solid #FFF;
+    padding: 4.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 2.2rem;
+
+}
+
+.manual-btn:hover {
+    background-color: #FFF;
+}
+
+#radio1:checked~.first {
+    margin-left: 0%;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+.navegacao-auto div {
+    border: 2px solid #FFF;
+    padding: 4.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao-auto {
+    position: absolute;
+    width: 1440px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navegacao-auto div:not(:last-child) {
+    margin-right: 25px;
+}
+
+#radio1:checked~.navegacao-auto .auto-btn1 {
+    background-color: #FFF;
+}
+
+#radio2:checked~.navegacao-auto .auto-btn2 {
+    background-color: #FFF;
+}
+
+#radio3:checked~.navegacao-auto .auto-btn3 {
+    background-color: #FFF;
+}

@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlueLotus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Primeira página</h1>
+    <!-- Criando um Header com navegação -->
+    <header class="home">
+
+        <img src="Imagens-hotel/LOGO_COM_NOME.png" class="img" alt="LOGO_COM_NOME">
+        <nav class="menu_barra">
+            <ul class="menu_lista">
+                <li><a href="#home">home</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#acomodacoes">acomodações</a></li>
+                <li><a href="#reservas">reservas</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="" class="fas fa-user">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30 32.5C34.1421 32.5 37.5 29.1421 37.5 25C37.5 20.8579 34.1421 17.5 30 17.5C25.8579 17.5 22.5 20.8579 22.5 25C22.5 29.1421 25.8579 32.5 30 32.5Z"
+                        stroke="#222222" stroke-width="2.5" stroke-linecap="round" />
+                    <path
+                        d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z"
+                        stroke="#222222" stroke-width="2.5" />
+                    <path
+                        d="M45 46.7648C44.1153 44.1068 42.1655 41.7582 39.4535 40.083C36.7415 38.408 33.4185 37.5 30 37.5C26.5815 37.5 23.2585 38.408 20.5465 40.083C17.8344 41.7582 15.8848 44.1068 15 46.7648"
+                        stroke="#222222" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!--Fim do Header -->
+
+    <!--Começo da Home-->
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+
+
+            <div class="slide first">
+                <img src="./Imagens-hotel/IMG_PISCINA_GUARDASOL.jpg" class="imagens_home" alt="imagem 1">
+                <h2 class="slogan_h2">Hotéis de Luxo</h2>
+                <h1 class="slogan_h1">"Seja bem-vindo ao nosso paraíso de conforto e relaxamento. Sua satisfação é a
+                    nossa prioridade!"</h1>
+
+                <button class="home-button"><a href="#home">Saiba Mais</a></button>
+                <input type="button" value="Saiba Mais" id="homeButton">
+
+            </div>
+
+            <div class="slide">
+                <img src="./Imagens-hotel/IMG_ESPREGUIÇADEIRA.jpg" class="imagens_home" alt="imagem 2">
+                <h2 class="slogan_h2">Hotéis de Luxo</h2>
+                <h1 class="slogan_h1">"Elegância excepcional, Serviço impecável, Experiências memoráveis."</h1>
+
+                <button class="home-button"><a href="#home">Saiba Mais</a></button>
+                <input type="button" value="Saiba Mais" id="homeButton">
+            </div>
+
+            <div class="slide">
+                <img src="./Imagens-hotel/IMG_PISCINA.jpg" class="imagens_home" alt="imagem 3">
+                <h2 class="slogan_h2">Hotéis de Luxo</h2>
+                <h1 class="slogan_h1">"Explore um santuário de elegância e hospitalidade no Hotel Blue Lotus."</h1>
+
+                <button class="home-button"><a href="#home">Saiba Mais</a></button>
+                <input type="button" value="Saiba Mais" id="homeButton">
+
+            </div>
+
+            <div class="navegacao-auto">
+                <div class="auto_btn1"></div>
+                <div class="auto_btn2"></div>
+                <div class="auto_btn3"></div>
+            </div>
+
+        </div>
+
+        <div class="navegacao-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>
