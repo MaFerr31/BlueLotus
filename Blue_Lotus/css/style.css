@@ -145,7 +145,8 @@ header {
 }
 
 .home-button a{
-    color: #FFF;
+    color: #ffffff;
+    padding: 2.5rem;
 }
 
 .home-button a:hover{
