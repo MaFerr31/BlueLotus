@@ -27,7 +27,7 @@ header {
     left: 0;
     right: 0;
     background: #fff;
-    padding: 2rem 8%;
+    padding: 1rem 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,10 +35,158 @@ header {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
+header a img {
+    width: 65%;
+}
+
+section {
+    width: 100%;
+    font-family: 'Roboto sanserif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    background-color: rgba(207, 166, 94, 0.753);
+    
+
+}
+
+.sobre-main {
+    display: flex;
+}
+
+.sobre_text {
+    width: 35%;
+    display: inline-block;
+    align-items: center;
+    margin: 20rem 25rem 15rem 20rem;
+    padding: 20px;
+    background-color: #FFF;
+    border: solid transparent;
+    border-radius: 1px;
+}
+
+.sobre-main {
+    display: flex;
+    margin:auto;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+}
+
+
+.sobre_text h1 {
+    display: flex;
+    text-transform: initial;
+    font-family: "Rosario";
+    font-weight: 300;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2%;
+    justify-content: left;
+    padding: 15px;
+    font-size: 4.8rem;
+}
+
+.sobre_text p {
+    display: flex;
+    margin-top: 26px;
+    justify-content: left;
+    padding: 15px;
+    font-family: 'Rosario sans-serif';
+    text-transform: initial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #5C5C5C;
+
+
+}
+
+.sobre_text h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 16px;
+    padding: 15px;
+    text-transform: initial;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration-line: underline;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: var(--purple);
+
+
+}
+
+.sobre_text button {
+    display: inline-block;
+    margin-left: 190px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 1rem 3rem;
+    background: var(--purple);
+    border-radius: 88px;
+    border: 1px solid var(--purple);
+
+}
+
+.sobre_text button a {
+    padding: 1rem 3rem;
+    color: #FFF;
+
+}
+
+.sobre_text a:hover {
+    transition-duration: .2s;
+    padding: 1rem 3rem;
+    color: var(--purple);
+
+}
+
+.sobre_text button:hover {
+    transition-duration: .2s;
+    padding: 1rem 3rem;
+    background-color: #FFF;
+
+}
+
+.img-main {
+    display: flex;
+    width: 50%;
+    
+}
+
+
+.sobre_img1 {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    left: 950px;
+    top: 1360px;
+    margin-bottom: 100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sobre_img2 {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    left: 1250px;
+    top: 1116px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 
 .menu_barra ul {
+    margin-right: 3.5rem;
     display: flex;
-    gap: 7.0rem;
+    gap: 8rem;
     align-items: center;
     list-style-type: none;
 }
@@ -54,14 +202,9 @@ header {
 
 }
 
-.icons a {
-    font-size: 2.5rem;
-    color: #333;
+.icons svg {
     margin-left: 1.5rem;
-}
-
-.icons svg:hover {
-    color: var(--purple);
+    width: 65%;
 }
 
 
@@ -69,7 +212,7 @@ header {
 
 .slider {
     margin: 0 auto;
-    width: 1440px;
+    width: 100%;
     height: 915px;
     overflow: hidden;
 }
@@ -86,16 +229,17 @@ header {
 
 .slide img {
     position: relative;
-    width: 1440px;
+    width: 100%;
 }
 
 .slogan_h1 {
     display: inline-block;
+    align-items: center;
     position: absolute;
     width: 962px;
     height: 107px;
-    left: 238px;
-    top: 451px;
+    left: 480px;
+    top: 421px;
     font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 500;
@@ -112,8 +256,8 @@ header {
     position: absolute;
     width: 198px;
     height: 33px;
-    left: 638px;
-    top: 383px;
+    left: 880px;
+    top: 343px;
     text-decoration-line: underline;
     font-family: 'Roboto Serif';
     font-style: normal;
@@ -127,8 +271,9 @@ header {
     position: absolute;
     width: 177.42px;
     height: 36px;
-    left: 629px;
-    top: 678px;
+    left: 865px;
+    top: 640px;
+    justify-content: center;
     background: #4380DF;
     border-radius: 88px;
     font-family: 'Rosario';
@@ -139,17 +284,17 @@ header {
     letter-spacing: 0.02em;
 }
 
-.home-button:hover{
+.home-button:hover {
     color: #4380DF;
     background-color: #FFFFFF;
 }
 
-.home-button a{
+.home-button a {
     color: #ffffff;
     padding: 2.5rem;
 }
 
-.home-button a:hover{
+.home-button a:hover {
     color: #4380DF;
 }
 
@@ -167,7 +312,7 @@ header {
 
 .navegacao-manual {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     margin-top: -40px;
     display: flex;
     justify-content: center;

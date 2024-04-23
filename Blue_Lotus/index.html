@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +26,7 @@
     <!-- Criando um Header com navegação -->
     <header class="home">
 
-        <img src="Imagens-hotel/LOGO_COM_NOME.png" class="img" alt="LOGO_COM_NOME">
+        <a href="#"><img src="Imagens-hotel/LOGO_COM_NOME.png" alt="LOGO_COM_NOME"></a>
         <nav class="menu_barra">
             <ul class="menu_lista">
                 <li><a href="#home">home</a></li>
@@ -35,7 +38,7 @@
         </nav>
 
         <div class="icons">
-            <a href="" class="fas fa-user">
+            <a href="#" class="fas fa-user">
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30 32.5C34.1421 32.5 37.5 29.1421 37.5 25C37.5 20.8579 34.1421 17.5 30 17.5C25.8579 17.5 22.5 20.8579 22.5 25C22.5 29.1421 25.8579 32.5 30 32.5Z"
@@ -84,7 +87,9 @@
 
             <div class="slide">
                 <img src="./Imagens-hotel/IMG_PISCINA.jpg" class="imagens_home" alt="imagem 3">
-                <h2 class="slogan_h2">Hotéis de Luxo</h2>
+                <div>
+                    <h2 class="slogan_h2">Hotéis de Luxo</h2>
+                </div>
                 <h1 class="slogan_h1">"Explore um santuário de elegância e hospitalidade no Hotel Blue Lotus."</h1>
 
                 <button class="home-button"><a href="#home">Saiba Mais</a></button>
@@ -107,6 +112,31 @@
         </div>
 
     </div>
+
+    <!--Começo container Sobre -->
+    <section class="sobre-container" id="sobre">
+        <div class="sobre-main" id="sobre">
+            <div class="sobre_text">
+                <h2>Os Melhores Hotéis de Luxo</h2>
+                <h1>Sua casa longe de casa</h1>
+                <p>Bem-vindo ao nosso hotel, onde luxo e conforto se fundem para criar uma experiência única e memorável
+                    para os
+                    nossos hóspedes. Com uma vasta gama de serviços de qualidade, incluindo quartos elegantemente
+                    decorados,
+                    gastronomia excepcional, estamos comprometidos em proporcionar a você uma estadia verdadeiramente
+                    inesquecível.</p>
+                <button><a href="#reservas">Reservar</a></button>
+
+            </div>
+
+            <div class="img-main">
+                <img src="Imagens-hotel/IMG_CAMA_SOBRE.jpg" alt="IMG_CAMA_SOBRE" class="sobre_img2">
+                <img src="Imagens-hotel/AREIA_GUARDASOL.jpg" alt="GUARDASOL" class="sobre_img1">
+                
+            </div>
+        </div>
+    </section>
+    <!-- Fim container Sobre-->
 
     <script src="./js/script.js"></script>
 
