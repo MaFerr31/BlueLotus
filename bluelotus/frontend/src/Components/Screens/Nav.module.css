@@ -1,0 +1,42 @@
+.nav_home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.nav_img{
+    width: 25%;
+}
+
+.nav_menu ul {
+    margin-right: 2rem;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_lista li {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.nav_lista li:hover {
+    color: var(--purple);
+
+}
+
+.icons svg {
+    margin-left: 1.5rem;
+    width: 65%;
+}
