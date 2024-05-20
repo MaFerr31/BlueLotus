@@ -3,6 +3,7 @@ import axios from "axios";
 
 const Login = () => {
 
+const [nome, setNome] = useState('');
 const[email, setEmail] =  useState('');
 const[senha, setSenha] = useState('');
 const[mensagem, setMensagem] = useState('');
@@ -12,8 +13,8 @@ const handleLogin  = async(e) => {
 
   try {
     await axios.post('http://localhost:4000/usuarios', {
-      tipo: 'usuarioLogado',
-      dados:{email, senha}
+      tipo: 'CreateUsuarioDto',
+      dados:{nome, email, senha}
     });
 
     setMensagem('Login realizado com sucesso')
@@ -31,6 +32,16 @@ return(
   <div>
   <h1>Login</h1>
   <form onSubmit={handleLogin}>
+  <div>
+      <label>Nome:</label>
+      <input
+      type="text"
+      value={nome}
+      onChange={(e) => setNome(e.target.value)}
+      required
+      /> 
+  </div>
+    
     <div>
       <label>Email:</label>
       <input
@@ -52,6 +63,9 @@ return(
   </div>
   <button type="submit"> Login</button>
   </form>
+  <div>
+    <p>{mensagem}</p>
+  </div>
   </div>
 );
 
