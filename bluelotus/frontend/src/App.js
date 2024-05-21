@@ -1,16 +1,21 @@
 import React from "react";
-import Login from "./Login";
-import Nav from "./Components/Screens/Nav";
+import Login from "./Components/Login/Login";
+import Nav from "./Components/Nav/Nav";
+import GlobalStyle from "./styles/globals";
+import Home from "./Components/Home/Home";
 
 
-const App = () => {
+const App=()=>{
 
     return (
         <div className="App">
         
             <div>
+                
+                <GlobalStyle/>
                 <Nav/>
                 <Login />
+                
             </div>
         </div>
     )
