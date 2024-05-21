@@ -7,14 +7,14 @@ export default function Nav() {
                 <img src="LOGO_COM_NOME.png" alt="Logotipo" className ={styles['nav_img']}></img>
                 <nav className={styles['nav_menu']}>
                     <ul className={styles['nav_lista']}>
-                        <li>home</li>
-                        <li>sobre</li>
-                        <li>acomodações</li>
-                        <li>reservas</li>
-                        <li>contato</li>
+                        <li><a href='/home'>home</a></li>
+                        <li><a href='/sobre'>sobre</a></li>
+                        <li><a href='/acomodacoes'>acomodações</a></li>
+                        <li><a href='/reservas'>reservas</a></li>
+                        <li><a href='/contato'>contato</a></li>
                     </ul>
                 </nav>
-                <div className="icons">
+                <div className={styles["icons"]}>
                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M30 32.5C34.1421 32.5 37.5 29.1421 37.5 25C37.5 20.8579 34.1421 17.5 30 17.5C25.8579 17.5 22.5 20.8579 22.5 25C22.5 29.1421 25.8579 32.5 30 32.5Z"

@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     background: #fff;
-    padding: 1rem 12%;
+    padding: 1rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 }
 
 .nav_img{
-    width: 25%;
+    width: 10%;
 }
 
 .nav_menu ul {
@@ -25,15 +25,15 @@
     list-style-type: none;
 }
 
-.nav_lista li {
+.nav_lista li a {
+    font-family: 'Roboto';
     font-size: 1.8rem;
     text-transform: uppercase;
     color: #000;
 }
 
-.nav_lista li:hover {
-    color: var(--purple);
-
+.nav_lista li a:hover{
+    color: #603AB1;
 }
 
 .icons svg {
