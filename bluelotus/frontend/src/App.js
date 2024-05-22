@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "./Components/Login/Login";
 import Nav from "./Components/Nav/Nav";
 import GlobalStyle from "./styles/globals";
 import Home from "./Components/Home/Home";
@@ -14,7 +13,7 @@ const App=()=>{
                 
                 <GlobalStyle/>
                 <Nav/>
-                <Login />
+                <Home/> 
                 
             </div>
         </div>
