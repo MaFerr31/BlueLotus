@@ -1,0 +1,118 @@
+section {
+    width: 100%;
+    font-family: 'Roboto sanserif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    /*background-image: url(/Imagens-hotel/AREIA3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    
+    background-color: rgba(207, 166, 94, 0.753);
+
+
+}
+
+.title{
+    display: inline-block;
+    justify-content: center;
+}
+
+.sobre-main {
+    display: flex;
+}
+
+.sobre_text {
+    width: 35%;
+    display: block;
+    justify-self: center;
+    margin: 20rem 25rem 15rem 20rem;
+    padding: 20px;
+    background-color: #FFF;
+    border: solid transparent;
+    border-radius: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.sobre-main {
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+}
+
+
+.sobre_text h1 {
+    display: flex;
+    text-transform: initial;
+    color: #4d4d4d;
+    font-family: "Poppins";
+    font-size: 3.8rem;
+    font-weight: 500;
+    justify-content: left;
+    padding: 15px;
+}
+
+.sobre_text p {
+    display: flex;
+    margin-top: 26px;
+    justify-content: left;
+    padding: 15px;
+    font-family: 'Roboto';
+    text-transform: initial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 30px;
+    letter-spacing: 0.2rem;
+    color: #5C5C5C;
+
+
+}
+
+.sobre_text h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 16px;
+    padding: 15px;
+    text-transform: initial;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration-line: underline;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: var(--purple);
+
+
+}
+
+.sobre_text button {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 185px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color:#f4f4f4;
+    padding: 1rem 3rem;
+    background: var(--purple);
+    border-radius: .5rem;
+    border: 1px solid var(--purple);
+
+}
+
+
+.sobre_text button:hover {
+    transition-duration: .2s;
+    padding: 1rem 3rem;
+    background-color: #FFF;
+    color:#5C5C5C;
+
+}
