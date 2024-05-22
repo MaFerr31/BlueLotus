@@ -13,17 +13,17 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:4000/usuarios', {
-        tipo: 'CreateUsuarioDto',
+      await axios.post('http://localhost:4000/usuario', {
+        tipo: 'data',
         dados: { nome, email, senha }
       });
 
-      setMensagem('Login realizado com sucesso')
+      setMensagem('Login realizado com sucesso!')
     } catch (error) {
       if (error.response && error.response.status === 400) {
-        setMensagem("Credenciais invalidas")
+        setMensagem("Credenciais invalidas!")
       } else {
-        setMensagem("Erro ao tentar o login")
+        setMensagem("Falha ao realizar o login")
       }
       console.log(error)
     }
@@ -37,26 +37,21 @@ const Login = () => {
         <div>
           <h1>Login</h1>
           <div className={styles["input-class"]}>
-            <input type="text" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)} required
-            />
+            <input type="text" placeholder="Nome" onChange={(e) => setNome(e.target.value)} value={nome} required/>
           </div>
 
           <div className={styles["input-class"]}>
-            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required
-            />
+            <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} required/>
           </div>
           <div className={styles["input-class"]}>
-            <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} required
-            />
+            <input type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} value={senha} required/>
           </div>
         </div>
+        <p className={styles["mensagem"]}>{mensagem}</p>
         <div className={styles["bnt-login"]}>
           <button type="submit" className={styles["bnt-login"]}> Login</button>
         </div>
       </form>
-      <div>
-        <p>{mensagem}</p>
-      </div>
     </div>
   );
 
