@@ -1,0 +1,40 @@
+.container {
+    padding: 4rem;
+    background-color: #503B7D;
+}
+
+.contato {
+    display: inline;
+    width:25%;
+    align-items: end;
+    text-align: right;
+    line-height: 2;
+    color:#f4f4f4;
+}
+
+
+.direito p{
+    margin:auto;
+    margin-top: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+    color:white;
+}
+
+address h4{
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: normal;
+    padding:0;
+}
+address{
+    text-transform: none;
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: normal;
+    margin-left: auto;
+    margin-bottom: 0px;
+    max-width: 290px
+
+}
