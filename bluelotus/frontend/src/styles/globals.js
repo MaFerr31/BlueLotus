@@ -36,5 +36,17 @@ header {
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
 }
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#321e5e;
+    font-size: 2.2rem;
+    font-family: 'Roboto';
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+ 
 `;
 export default GlobalStyle;
