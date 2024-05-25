@@ -33,9 +33,9 @@ const Login = () => {
 
     <div className={styles['container']}>
 
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className={styles["form-login"]}>
         <div>
-          <h1>Login</h1>
+          <h1 className={styles["title-login"]}>Login</h1>
           <div className={styles["input-class"]}>
             <input type="text" placeholder="Nome" onChange={(e) => setNome(e.target.value)} value={nome} required/>
           </div>
@@ -49,7 +49,7 @@ const Login = () => {
         </div>
         <p className={styles["mensagem"]}>{mensagem}</p>
         <div className={styles["bnt-login"]}>
-          <button type="submit" className={styles["bnt-login"]}> Login</button>
+          <button type="submit" className={styles["bnt"]}> Login</button>
         </div>
       </form>
     </div>
