@@ -1,4 +1,4 @@
-section {
+.sobre-container {
     width: 100%;
     font-family: 'Roboto sanserif';
     font-style: normal;
@@ -111,8 +111,12 @@ section {
 
 .sobre_text button:hover {
     transition-duration: .2s;
-    padding: 1rem 3rem;
-    background-color: #FFF;
-    color:#5C5C5C;
+    background: #321e5e;
 
+}
+
+.img-sobre img{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+    width: 500px;
+    margin-top: 60px
 }

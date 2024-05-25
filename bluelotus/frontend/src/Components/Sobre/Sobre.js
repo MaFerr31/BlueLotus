@@ -17,8 +17,10 @@ export default function Sobre() {
                         <button type="button">Visualizar acomodações</button>
 
                     </div>
-
+                <div className={styles["img-sobre"]}><img src="IMG_SOBRE.jpg"alt="sobre"/></div>
+                    
                 </div>
+                
             </section>
         </div>
     )
