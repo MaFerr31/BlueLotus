@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Sobre.module.css";
 
 export default function Sobre() {
     return (
         <div className={styles["section"]}>
-            <section className={styles["sobre-container"]} id="sobre">
+            <section className={styles["sobre-container"]}>
                 <div className={styles["sobre-main"]} id="sobre">
                     <div className={styles["sobre_text"]}>
                         <h2>Os Melhores Hotéis de Luxo</h2>
@@ -14,7 +15,7 @@ export default function Sobre() {
                             decorados,
                             gastronomia excepcional, estamos comprometidos em proporcionar a você uma estadia verdadeiramente
                             inesquecível.</p>
-                        <button type="button">Visualizar acomodações</button>
+                        <button type="button"><NavLink to ="/acomodacoes">Visualizar acomodações</NavLink></button>
 
                     </div>
                 <div className={styles["img-sobre"]}><img src="IMG_SOBRE.jpg"alt="sobre"/></div>

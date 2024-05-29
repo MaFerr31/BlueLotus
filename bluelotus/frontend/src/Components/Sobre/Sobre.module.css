@@ -1,5 +1,6 @@
 .sobre-container {
     width: 100%;
+    padding-top: 9rem;
     font-family: 'Roboto sanserif';
     font-style: normal;
     font-weight: 400;
@@ -108,11 +109,13 @@
 
 }
 
+.sobre_text button a{
+    color: #f4f4f4;
+}
 
 .sobre_text button:hover {
     transition-duration: .2s;
     background: #321e5e;
-
 }
 
 .img-sobre img{
