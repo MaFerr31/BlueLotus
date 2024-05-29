@@ -57,6 +57,10 @@
     font-size: 1.8rem;
 }
 
+.btn a{
+    color: #fff;
+}
+
 .btn:hover{
     background: #321e5e;
 }

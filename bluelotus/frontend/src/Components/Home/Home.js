@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './Home.module.css'
-import Login from "../Login/Login";
+import Cadastro from "../Cadastro/Cadastro";
 import backgroundImage from './background/homeimage.jpg'
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -21,10 +22,10 @@ export default function Home() {
                         emocionantes, gastronomia requintada e acomodações luxuosas. Sua escapada
                         perfeita começa aqui, onde o mar encontra o conforto.
                     </p>
-                    <button className={styles['btn']}>saiba mais</button>
+                    <button className={styles['btn']}><NavLink to ="/sobre">saiba mais</NavLink></button>
                 </div>
                 <div className={styles["container"]}>
-                  <Login/>
+                  <Cadastro/>
                 </div>
             </section>
         </div>
