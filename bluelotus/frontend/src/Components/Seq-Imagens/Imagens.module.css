@@ -1,0 +1,19 @@
+.img-rodape{
+    background-color: #503B7D;
+    padding: 0;
+}
+
+.img-rodape img{
+    width: 380.5px;
+    height: 500px;
+    background-color: var(--purple);
+}
+
+.img-rodape img:hover{
+    transform: scale(1.1);
+}
+
+.img-rodape img{
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
