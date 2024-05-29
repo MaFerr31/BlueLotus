@@ -1,15 +1,16 @@
+import { NavLink } from 'react-router-dom'
 import styles from './Nav.module.css'
 
 export default function Nav() {
     return (
         <div>
             <header className={styles['nav_home']}>
-                <img src="LOGO_COM_NOME.png" alt="Logotipo" className ={styles['nav_img']}></img>
+                <NavLink to = "/" className={styles["nav_link"]}><img src="LOGO_COM_NOME.png" alt="L" className ={styles['nav_img']}></img></NavLink>
                 <nav className={styles['nav_menu']}>
                     <ul className={styles['nav_lista']}>
-                        <li><a href='/home'>home</a></li>
-                        <li><a href='/sobre'>sobre</a></li>
-                        <li><a href='/acomodacoes'>acomodações</a></li>
+                        <li><NavLink to ="/home">Home</NavLink></li>
+                        <li><NavLink to ="/sobre">Sobre</NavLink></li>
+                        <li><NavLink to ="/acomodacoes">acomodações</NavLink></li>
                         <li><a href='/reservas'>reservas</a></li>
                         <li><a href='/contato'>contato</a></li>
                     </ul>

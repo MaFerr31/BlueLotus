@@ -13,16 +13,20 @@
 
 }
 
-.nav_img{
-    width: 10%;
-}
-
 .nav_menu ul {
     margin-right: 2rem;
     display: flex;
     gap: 5rem;
     align-items: center;
     list-style-type: none;
+}
+
+.nav_link{
+    width: 10%;
+}
+
+.nav_link img{
+    width: 90%;
 }
 
 .nav_lista li a {
