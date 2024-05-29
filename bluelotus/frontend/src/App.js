@@ -5,7 +5,10 @@ import Home from "./Components/Home/Home";
 import Sobre from "./Components/Sobre/Sobre";
 import Footer from "./Components/Footer/Footer";
 import Acomodacao from "./Components/Acomodação/Acomodacao";
-import Reserva from "./Reserva/Reserva";
+import Imagens from "./Components/Seq-Imagens/Imagens";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllPages from "./AllPages";
+
 
 
 const App=()=>{
@@ -14,14 +17,18 @@ const App=()=>{
         <div className="App">
         
             <div>
-                
                 <GlobalStyle/>
+                <BrowserRouter>
                 <Nav/>
-                <Home/> 
-                <Sobre/>
-                <Acomodacao/>
-                <Reserva/>
+                <Routes>
+                <Route exact path="/" element={<AllPages/>} />
+                <Route exact path="/home" element={<Home/>} />
+                <Route exact path="/sobre" element={<Sobre/>}/>
+                <Route exact path="/acomodacoes" element={<Acomodacao/>}/>
+                </Routes>
+                <Imagens/>
                 <Footer/>
+                </BrowserRouter>
                 
             </div>
         </div>
