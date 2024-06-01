@@ -11,7 +11,7 @@ export default function Nav() {
                         <li><NavLink to ="/home">Home</NavLink></li>
                         <li><NavLink to ="/sobre">Sobre</NavLink></li>
                         <li><NavLink to ="/acomodacoes">acomodações</NavLink></li>
-                        <li><a href='/reservas'>reservas</a></li>
+                        <li><NavLink to ='/reservas'>reservas</NavLink></li>
                         <li><a href='/contato'>contato</a></li>
                     </ul>
                 </nav>

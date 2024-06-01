@@ -7,6 +7,7 @@ const Reserva = () => {
     const[checkIn, setCheckIn] = useState('');
     const[checkOut, setCheckOut] = useState('');
     const[hospedes, setHospedes] = useState('');
+    const[tipoQuarto, setTipoQuarto] = useState('');
     const[mensagem, setMensagem] = useState('');
 
     const handleReserva = async (e) => {
@@ -42,7 +43,7 @@ const Reserva = () => {
                 <input type="number" name="hospedes" onChange={(e) => setHospedes(e.target.value)} value={hospedes} required placeholder="Selecione o número" className={styles["in_rvs"]} ></input>
                 </label>
                 <label className={styles["check-number"]}>Tipo do quarto
-                <input type="number" name="hospedes" onChange={(e) => setHospedes(e.target.value)} value={hospedes} required placeholder="Selecione o número" className={styles["in_rvs"]} ></input>
+                <input type="number" name="hospedes" onChange={(e) => setTipoQuarto(e.target.value)} value={tipoQuarto} required placeholder="Selecione o número" className={styles["in_rvs"]} ></input>
                 </label>
                 <div className={styles["btn-reserva"]}>
                 <button type="submit" className={styles["btn"]} >Reservar</button>

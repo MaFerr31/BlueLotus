@@ -15,8 +15,8 @@ export class Reserva{
     @Column({type: 'int'})
     hospedes: number;
 
-    @Column({type: 'boolean'})
-    status: boolean;
+    @Column()
+    tipoQuarto: number;
 
     @ManyToOne(() => Usuario, usuario => usuario.reserva)
     usuario: Usuario;
