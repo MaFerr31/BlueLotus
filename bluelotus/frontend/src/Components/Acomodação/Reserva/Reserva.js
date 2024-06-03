@@ -15,7 +15,7 @@ const Reserva = () => {
 
         try {
             await axios.post("http://localhost:4000/reservar", {
-                checkIn, checkOut, hospedes
+                checkIn, checkOut, hospedes, tipoQuarto
             });
             
             setMensagem("Reserva realizada com sucesso!")
