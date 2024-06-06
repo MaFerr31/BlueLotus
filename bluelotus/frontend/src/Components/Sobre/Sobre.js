@@ -5,7 +5,7 @@ export default function Sobre() {
     return (
         <div className={styles["section"]}>
             <section className={styles["sobre-container"]}>
-                <div className={styles["sobre-main"]} id="sobre">
+                <div className={styles["sobre-main"]}>
                     <div className={styles["sobre_text"]}>
                         <h2>Os Melhores Hotéis de Luxo</h2>
                         <h1 className={styles["title"]}>Viver experiências únicas</h1>
