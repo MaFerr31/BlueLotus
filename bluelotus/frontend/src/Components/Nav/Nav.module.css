@@ -16,7 +16,7 @@
 .nav_menu ul {
     margin-right: 2rem;
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
     align-items: center;
     list-style-type: none;
 }
