@@ -14,7 +14,7 @@ const Reserva = () => {
         e.preventDefault();
 
         try {
-            await axios.post("http://localhost:4000/reservar", {
+            await axios.post("http://localhost:4000/reserva", {
                 checkIn, checkOut, hospedes, tipoQuarto
             });
             

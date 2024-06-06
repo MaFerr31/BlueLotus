@@ -6,7 +6,8 @@ import Sobre from "./Components/Sobre/Sobre";
 import Acomodacao from "./Components/Acomodação/Acomodacao";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AllPages from "./AllPages";
-import ReservaList from "./Components/ReservaList/ReservaList";
+import Cadastro from "./Components/Cadastro/Cadastro";
+import Perfil from "./Components/Perfil/Perfil";
 
 
 
@@ -24,7 +25,8 @@ const App=()=>{
                 <Route exact path="/home" element={<Home/>} />
                 <Route exact path="/sobre" element={<Sobre/>}/>
                 <Route exact path="/acomodacoes" element={<Acomodacao/>}/>
-                <Route exact path="/reservas" element={<ReservaList/>}/>
+                <Route exact path="/cadastro" element={<Cadastro/>}/>
+                <Route exact path="/perfil" element={<Perfil/>}/>
                 </Routes>
                 </BrowserRouter>
                 
