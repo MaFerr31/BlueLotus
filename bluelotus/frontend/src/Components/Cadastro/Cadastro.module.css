@@ -1,75 +1,106 @@
-.container{
-    font-family: Arial, sans-serif;
-    background-color: transparent;
+.container {
+    width: 70%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
+    background-color: #E1D5F9;
+    padding: 1rem;
+}
 
-  .form-login {
+.form-image img {
+    width: 90%;
+    height: 100vh;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-    width: 350px;
-  }
+    padding: 3rem;
+}
 
-  h1{
-    text-align: center;
-    text-transform: uppercase;
-    color:#321e5e;
-    font-size: 2.2rem;
-    font-family: 'Roboto';
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .input-class{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
 
-  }
-  
-  input[type=email],
-  input[type=password],
-  input[type=text]{
-    width: 75%;
-    padding: 1rem;
-    text-transform: none;
-    margin: 5px 0 ;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
+.continue-button {
+    display: flex;
+    gap: 22rem;
+    align-items: center;
+}
 
-  }
-
-  .bnt-login{
-    text-align: center;
-  }
-
-  .mensagem{
-    text-transform: none;
-    font-size: 1.2rem;
-    margin:auto;
-    text-align: center;
-    color: #237ac2;
-  }
-  
-  .bnt{
-    width: 75%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #603AB1;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: .3rem;
-    cursor: pointer;
+.continue-button button {
     font-size: 1.6rem;
-  }
-  .bnt:hover{
-  background-color: #321e5e;
-  }
+    font-family: "Roboto";
+    cursor: pointer;
+    color:#f4f4f4;
+    padding: 1rem 3rem;
+    background: var(--purple);
+    border-radius: .5rem;
+    border: 1px solid var(--purple);
+}
 
+.continue-button button:hover {
+    transition-duration: .2s;
+    background: #321e5e;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--purple);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.label-cds {
+    text-transform: initial ;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.mensagem {
+    text-align: left;
+    text-transform: none;
+    color: #237ac2;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 100%;
+}
