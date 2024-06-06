@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Home.module.css'
-import Cadastro from "../Cadastro/Cadastro";
+import Login from "../Login/Login";
 import backgroundImage from './background/homeimage.jpg'
 import { NavLink } from "react-router-dom";
 
@@ -25,7 +25,7 @@ export default function Home() {
                     <button className={styles['btn']}><NavLink to ="/sobre">saiba mais</NavLink></button>
                 </div>
                 <div className={styles["container"]}>
-                  <Cadastro/>
+                  <Login/>
                 </div>
             </section>
         </div>
