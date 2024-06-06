@@ -1,4 +1,4 @@
-import { IsEmail, IsString, Length, IsInt} from 'class-validator';
+import { IsEmail, IsString, Length, IsInt, IsNumber} from 'class-validator';
 import { PartialType } from '@nestjs/mapped-types';
 import { ApiProperty } from '@nestjs/swagger';
 
@@ -25,9 +25,9 @@ export class CreatePerfilDto {
     cidade: string;
     
     @ApiProperty({description:'Celular com DDD'})
-    @IsInt()
-    @Length(12, 12, {message: 'insira o numero de telefone com o DDD'})
-    numero: number;
+    @IsString()
+    @Length(0, 12, {message: 'insira o numero de telefone com o DDD'})
+    celular: string;
 
     @IsInt()
     usuarioId: number;

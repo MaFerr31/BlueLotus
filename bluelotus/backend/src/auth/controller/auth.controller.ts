@@ -11,11 +11,11 @@ export class AuthController {
   @Post('login')
   @ApiOperation({summary:"Autenticação de login."})
   async login(@Body() loginDto: {email: string, senha: string}) {
-    const user = await this.authService.validateUsuario(loginDto.email, loginDto.senha);
-    if (!user) {
+    const usuario = await this.authService.validateUsuario(loginDto.email, loginDto.senha);
+    if (!usuario) {
       throw new NotFoundException('Credenciais inválidas');
     }
-    return this.authService.login(user);
+    return this.authService.login(usuario);
   }
 
 }

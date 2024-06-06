@@ -18,8 +18,8 @@ export class Perfil {
     @Column({ length: 40 })
     cidade: string;
 
-    @Column({ type: 'int'})
-    celular: number;
+    @Column()
+    celular: string;
 
     @ManyToOne(() => Usuario, usuario => usuario.perfil)
     usuario: Usuario;

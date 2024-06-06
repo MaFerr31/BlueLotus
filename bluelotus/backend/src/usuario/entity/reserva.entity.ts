@@ -7,12 +7,12 @@ export class Reserva{
     id_reserva: number;
 
     @Column()
-    check_in: Date; 
+    checkInDate: string; 
 
     @Column()
-    check_out: Date;
+    checkOutDate: string;
 
-    @Column({type: 'int'})
+    @Column()
     hospedes: number;
 
     @Column()

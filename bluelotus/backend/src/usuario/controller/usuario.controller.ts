@@ -1,14 +1,14 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { CreateUsuarioDto, UpdateUsuarioDto } from '../dto/usuario.dto';
 import { UsuarioService } from '../service/usuario.service';
-import { Usuario } from '../entity/usuario.entity';
+
 
 @Controller('usuario')
 @ApiTags('Usuários')
 export class UsuarioController {
     constructor(private readonly usuarioService: UsuarioService) { }
-
+    
     @Post()
     @ApiOperation({ summary: 'Adicionar novo usuário.' })
     @ApiResponse({ status: 401, description: 'Não autorizado.' })
@@ -18,13 +18,15 @@ export class UsuarioController {
     async create(@Body() createUsuarioDto: CreateUsuarioDto) {
         return this.usuarioService.create(createUsuarioDto);
     }
-
+    
+    
     @Get()
     @ApiOperation({ summary: 'Encontrar usuário.' })
     async findAll(): Promise<any[]> {
         return this.usuarioService.findAll();
     }
-
+    
+   
     @Get(':id')
     @ApiOperation({ summary: 'Encontrar um usuário.' })
     async findOne(@Param('id') id: number): Promise<any> {

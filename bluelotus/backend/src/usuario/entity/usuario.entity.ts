@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany} from 'typeorm';
 import { Perfil } from './perfil.entity';
 import { Reserva } from './reserva.entity';
 
@@ -6,6 +6,9 @@ import { Reserva } from './reserva.entity';
 export class Usuario{
     @PrimaryGeneratedColumn()
     id_usuario: number;
+
+    @Column()
+    nome: string;
 
     @Column({ unique: true,length: 40 })
     email: string;

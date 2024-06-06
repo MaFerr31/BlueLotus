@@ -1,16 +1,18 @@
-import { Controller, Body, Post, Get, Put, Param, Delete, HttpCode, HttpStatus } from '@nestjs/common';
+import { Controller, Body, Post, Request, Get, Put, Param, Delete, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { ReservaService } from '../service/reserva.service';
 import { CreateReservaDto, UpdateReservaDto } from '../dto/reserva.dto';
+import { JwtAuthGuard } from 'src/auth/guard/jwt-auth.guard.strategy';
+
+@UseGuards(JwtAuthGuard)
 @ApiTags('Reserva')
 @Controller('reserva')
 export class ReservaController {
     constructor(private readonly reservaService: ReservaService) {}
 
     @Post()
-    @ApiOperation({ summary: 'Adicionar reserva.' })
-    async create(@Body() CreateReservaDto: CreateReservaDto) {
-        return await this.reservaService.create(CreateReservaDto);
+    async create(@Body() createReservaDto: CreateReservaDto) {
+        return await this.reservaService.create(createReservaDto);
     }
 
     @Get()
