@@ -53,7 +53,7 @@ function Login() {
 
 
           <div className={styles["input-class"]}>
-            <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} required/>
+            <input type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} value={email} required/>
           </div>
           <div className={styles["input-class"]}>
             <input type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} value={senha} required/>

@@ -28,6 +28,12 @@
   .link{
     text-transform: initial;
     font-size: 1.6rem;
+    color: #237ac2;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    color: #17578b;
   }
   
   .input-class{

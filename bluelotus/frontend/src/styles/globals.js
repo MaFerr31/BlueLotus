@@ -47,6 +47,14 @@ h1{
     margin-bottom: 1rem;
   }
 
+.mensagem{
+    text-transform: none;
+    font-size: 1.6rem;
+    margin:auto;
+    text-align: center;
+    color: #237ac2;
+  }
+
  
 `;
 export default GlobalStyle;

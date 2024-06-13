@@ -65,8 +65,8 @@ const Cadastro = () => {
           </div>
           <div className={styles["mensagem"]}>{mensagem}</div>
           <div className={styles["continue-button"]}>
-            <button><NavLink to = "/home">Voltar</NavLink></button>
-            <button>Cadastrar</button>
+          <NavLink to = "/home"><button>Voltar</button></NavLink>
+            <button type='submit'>Cadastrar</button>
           </div>
          
         </form>
