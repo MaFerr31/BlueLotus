@@ -51,7 +51,7 @@ export class UsuarioService {
         }
     }
 
-    async update(id: number, UpdateUsuarioDto: UpdateUsuarioDto): Promise<void> {
+    async update(id: number, updateUsuarioDto: UpdateUsuarioDto): Promise<void> {
         const result = await this.usuarioRepository.delete(id);
         if (result.affected === 0) {
             throw new HttpException(`Usuário não encontrado. `, HttpStatus.NOT_FOUND);

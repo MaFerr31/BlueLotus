@@ -3,10 +3,10 @@ import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { HttpException, HttpStatus, ValidationPipe } from '@nestjs/common';
 
-
 async function bootstrap() {
+  
   const app = await NestFactory.create(AppModule, { cors: true });
-
+  app.enableCors();
   const config = new DocumentBuilder()
     .setTitle('Projeto BlueLotus')
     .setDescription('Projeto de Sistema de Hotelaria, feito para gerenciamento.')
@@ -31,7 +31,6 @@ async function bootstrap() {
         ),
     }),
   )
-  await app.enableCors();
   await app.listen(4000);
 }
 bootstrap();

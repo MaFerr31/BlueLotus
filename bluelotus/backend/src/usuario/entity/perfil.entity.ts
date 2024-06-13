@@ -23,6 +23,9 @@ export class Perfil {
 
     @ManyToOne(() => Usuario, usuario => usuario.perfil)
     usuario: Usuario;
+
+    @Column()
+    usuarioIdUsuario: number;
 }
 
 export class PerfilEntity {}

@@ -21,5 +21,8 @@ export class Reserva{
     @ManyToOne(() => Usuario, usuario => usuario.reserva)
     usuario: Usuario;
 
+    @Column()
+    usuarioId: number;
+
 
 }

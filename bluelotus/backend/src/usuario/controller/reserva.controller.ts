@@ -11,13 +11,17 @@ export class ReservaController {
     constructor(private readonly reservaService: ReservaService) {}
 
     @Post()
-    async create(@Body() createReservaDto: CreateReservaDto) {
+    async create(@Request() req, @Body() createReservaDto: CreateReservaDto) {
+        //console.log("valores", req.user)
+        createReservaDto.usuarioId = req.user.usuarioId
+        //console.log("valores", createReservaDto)
         return await this.reservaService.create(createReservaDto);
     }
 
     @Get()
     @ApiOperation({ summary: 'Consultar reservas.' })
-    async findAll() {
+    async findAll(@Request() req) {
+        const idusuario = req.user.usuarioId
         return await this.reservaService.findAll();
     }
 

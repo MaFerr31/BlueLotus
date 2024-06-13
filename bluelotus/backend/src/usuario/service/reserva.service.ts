@@ -25,8 +25,8 @@ export class ReservaService {
         return await this.reservaRepository.save(newReserva);
     }
 
-    async findAll(): Promise<Usuario[]> {
-       return await this.UsuarioService.findAll();
+    async findAll(): Promise<Reserva[]> {
+       return await this.reservaRepository.find();
     }
 
     async findOne(id: number): Promise<Reserva>{

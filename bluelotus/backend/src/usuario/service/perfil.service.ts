@@ -16,7 +16,9 @@ export class PerfilService {
 
     async create(createPerfilDto: CreatePerfilDto): Promise<Perfil> {
         const usuario = await this.UsuarioService.findOne(createPerfilDto.usuarioId);
+        
         if(!usuario) {
+            console.log('usuario', usuario)
             throw new NotFoundException(`Usuário não encontrado.`);
         }
         const newPerfil = this.perfilRepository.create({
@@ -26,8 +28,8 @@ export class PerfilService {
         return await this.perfilRepository.save(newPerfil);
     }
 
-    async findAll(): Promise<Usuario[]> {
-       return await this.UsuarioService.findAll();
+    async findAll(): Promise<Perfil[]> {
+       return await this.perfilRepository.find();
     }
 
     async findOne(id: number): Promise<Perfil>{

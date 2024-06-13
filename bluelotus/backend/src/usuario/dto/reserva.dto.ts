@@ -1,5 +1,5 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { IsDate, IsNumber, IsOptional } from 'class-validator';
+import { IsDate, IsInt, IsNumber, IsOptional } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 
@@ -24,7 +24,7 @@ export class CreateReservaDto {
     @ApiProperty({description:'Status da reserva'})
     tipoQuarto: number;
     
-    @IsNumber()
+    @IsInt()
     usuarioId: number;
 
 
