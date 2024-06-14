@@ -1,4 +1,4 @@
-import { Controller, Body, Post, Get, Put, Param, Delete, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
+import { Controller, Body, Post, Get, Put, Param, Delete, HttpCode, HttpStatus, UseGuards, Request } from '@nestjs/common';
 import { PerfilService } from '../service/perfil.service';
 import { CreatePerfilDto, UpdatePerfilDto } from '../dto/perfil.dto';
 import { ApiOperation, ApiTags, ApiResponse } from '@nestjs/swagger';
@@ -13,8 +13,9 @@ export class PerfilController {
 
     @Post()
     @ApiOperation({summary:"Adicionar novo perfil."})
-    async create(@Body() CreatePerfilDto: CreatePerfilDto) {
-        return await this.perfilService.create(CreatePerfilDto);
+    async create(@Request() req, @Body() createPerfilDto: CreatePerfilDto) {
+        createPerfilDto.usuarioId = req.user.usuarioId
+        return await this.perfilService.create(createPerfilDto);
     }
 
     @Get()
