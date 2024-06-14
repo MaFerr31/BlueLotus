@@ -80,7 +80,7 @@ const Perfil = () => {
 
           <div>
             <label className={styles["label-prof"]} name="Celular">Celular: </label>
-            <input className={styles['in-prof']} type="text" name="celular" onChange={(e) => setCelular(e.target.value)} value={celular.celular} ></input>
+            <input className={styles['in-prof']} type="text" name="celular" onChange={(e) => setCelular(e.target.value)} value={celular.celular} placeholder="+DDD" ></input>
           </div>
 
           <div className={styles["mensagem"]}>{mensagem}</div>
