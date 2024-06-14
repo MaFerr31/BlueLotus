@@ -48,6 +48,15 @@
     text-transform: none;
 }
 
+.mensagem{
+    text-transform: none;
+    font-size: 1.6rem;
+    margin:auto;
+    margin-left: 2rem;
+    text-align: center;
+    color: #058b2e;
+  }
+
 .btn-reserva{
     text-align: center;
 }

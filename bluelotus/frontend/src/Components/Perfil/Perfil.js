@@ -8,21 +8,24 @@ const Perfil = () => {
   const [endereco, setEndereco] = useState("");
   const [cidade, setCidade] = useState("");
   const [celular, setCelular] = useState("");
-  const [usuarioId, setUsuarioId] = useState(0);
   const [mensagem, setMensagem] = useState("")
 
   const handlePerfil = async (e) => {
     e.preventDefault();
-    console.log("batatafrita", {
-      nome, email, endereco, cidade, celular, usuarioId
-    } )
+
     try {
+      const token = localStorage.getItem("token");
+            const config = {
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                },
+              };
+      let usuarioId = 0
+
       await axios.post(`http://localhost:4000/perfil`, {
         nome, email, endereco, cidade, celular, usuarioId
-      });
-      console.log("batatafrita", {
-        nome, email, endereco, cidade, celular, usuarioId
-      } )
+      }, config);
+
       setMensagem('Perfil registrado com sucesso!')
     } catch (error) {
       if (error.response && error.response.status === 400) {
@@ -42,7 +45,7 @@ const Perfil = () => {
       <form onSubmit={handlePerfil} className={styles["box-profile"]}>
         <div className={styles["profile_text"]}>
           <h1 className={styles["title"]}>Criar o seu Perfil</h1>
-
+          {/*
           <div>
             <label className={styles["label-prof"]}> ID: </label>
             <input className={styles['in-prof']} type="number" name="usuarioId" 
@@ -52,7 +55,8 @@ const Perfil = () => {
                 setUsuarioId(valor)
               }
             }} ></input>
-          </div>
+          </div> 
+          */}
 
           <div>
             <label className={styles["label-prof"]} name="nome">Nome: </label>
