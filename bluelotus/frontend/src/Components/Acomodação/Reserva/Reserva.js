@@ -12,9 +12,6 @@ const Reserva = () => {
 
     const handleReserva = async (e) => {
         e.preventDefault();
-        console.log("valores", {
-            checkInDate, checkOutDate, hospedes, tipoQuarto
-        })
         try {
             const token = localStorage.getItem("token");
             const config = {
